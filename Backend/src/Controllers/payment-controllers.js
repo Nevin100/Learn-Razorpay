@@ -1,3 +1,5 @@
+import { instance } from "../index.js";
+
 export const checkOut = async (req, res) => {
   try {
     const options = {
@@ -6,11 +8,10 @@ export const checkOut = async (req, res) => {
     };
 
     const order = await instance.orders.create(options);
-
+    console.log("Order created:", order);
     res.status(200).json({
       message: "Order created successfully",
       error: false,
-      data: order,
     });
   } catch (error) {
     console.error("Error during checkout:", error);
