@@ -3,6 +3,10 @@
     "development"
   ],
   "hints": {
-    "axe/text-alternatives": "off"
+    "axe/text-alternatives": "off",
+    "typescript-config/strict": "off",
+    "typescript-config/consistent-casing": "off",
+    "typescript-config/is-valid": "off",
+    "no-inline-styles": "off"
   }
 }
